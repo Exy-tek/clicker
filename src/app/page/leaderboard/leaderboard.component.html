@@ -1,0 +1,6 @@
+<p>leaderboard works!</p>
+<h1>TOP 10 MEILLEURS JOUEURS</h1>
+<ul>
+    <li *ngFor="let score of scoreboard">{{score.username}} : {{score.score}}</li>
+</ul>
+<h1>Ma position : {{whereIam}}</h1>

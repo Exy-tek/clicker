@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-12 text-center">
+        <p>Nombre de cookies: {{cookies}}</p>
+        <button class="farm-1" [disabled]="farms.farm1.level >= 10" (click)="buyFarm(1)"></button> cost: {{farms.farm1.cost}} level : {{farms.farm1.level}} increase cookies production per second by {{farms.farm1.income}}<br>
+        <button class="farm-2" [disabled]="farms.farm2.level >= 10" (click)="buyFarm(2)"></button> cost: {{farms.farm2.cost}} level : {{farms.farm2.level}} increase cookies production per second by {{farms.farm2.income}}<br>
+        <button class="farm-3" [disabled]="farms.farm3.level >= 10" (click)="buyFarm(3)"></button> cost: {{farms.farm3.cost}} level : {{farms.farm3.level}} increase cookies production per second by {{farms.farm3.income}}<br>
+        <button class="farm-4" [disabled]="farms.farm4.level >= 10" (click)="buyFarm(4)"></button> cost: {{farms.farm4.cost}} level : {{farms.farm4.level}} increase cookies production per second by {{farms.farm4.income}}<br>
+        <button class="farm-5" [disabled]="farms.farm5.level >= 10" (click)="buyFarm(5)"></button> cost: {{farms.farm5.cost}} level : {{farms.farm5.level}} increase cookies production per second by {{farms.farm5.income}}<br>
+    </div>
+</div>

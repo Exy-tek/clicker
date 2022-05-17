@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-12 text-center">
+        <div [hidden]="accepted()">
+            <p>Voulez-vous des cookies ? </p>
+            <img src="https://img.freepik.com/photos-gratuite/vue-plateau-beaux-cookies-aux-pepites-chocolat_321802-541.jpg"><br>
+            <button class="btn btn-outline-success" (click)="acceptCookies()">Oui</button>
+            <button class="btn btn-outline-danger" (click)="declined()">Non</button>
+        </div>
+        <div [hidden]="!accepted()">
+            Entrez votre pseudo ! 
+            <input placeholder="Entrez votre pseudo" [(ngModel)]="username">
+            <button (click)="setUsername()">Valider</button>
+        </div>
+    </div>
+</div>
